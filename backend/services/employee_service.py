@@ -8,7 +8,7 @@ def find_employee(name):
     employees = get_employees()
 
     for employee in employees:
-        if employee["name"].lower() == name.lower():
+        if employee["name"].lower() == name.strip().lower():
             return employee
 
     return None
